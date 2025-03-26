@@ -10,9 +10,7 @@ int main() {
     float area1;
     float pib1;
     int ponto_turistico1;
-    float densidade_populacional1; 
-    float pib_per_capita1;
-   
+    
     printf("Digite o nome do estado1: \n");
     scanf("%s", &estado1);
    
@@ -36,9 +34,9 @@ int main() {
 
     //calculo de densidade e pib per capita carta 1
 
-    densidade_populacional1 = populacao1 / area1;
+    float densidade_populacional1 = populacao1 / area1;
 
-    pib_per_capita1 =  pib1 / populacao1;
+    float pib_per_capita1 =  pib1 / populacao1;
    
     //Exibição da carta1
    
@@ -46,8 +44,8 @@ int main() {
     printf("codigo1: %s\n", codigo1);
     printf("cidade1: %s\n", cidade1);
     printf("populacao1: %d\n", populacao1);
-    printf("area1: %f\n", area1);
-    printf("pib1: %f\n", pib1);
+    printf("area1: %.2f\n", area1);
+    printf("pib1: %.2f\n", pib1);
     printf("ponto turistico1: %d\n",ponto_turistico1);
     printf("densidade populacional1: %.2f\n", densidade_populacional1);
     printf("pib per capita1: %.2f\n", pib_per_capita1);
