@@ -114,14 +114,23 @@ int main() {
 
     //Comparação de atributos
 
-    printf ("População 1 > População 2: %s\n", populacao1 > populacao2 ? "Sim" : "Não");
-    printf ("Área 1 > Área 2: %s\n", area1 > area2 ? "Sim" : "Não");
-    printf ("PIB 1 > PIB 2: %s\n", pib1 > pib2 ? "Sim" : "Não");
-    printf ("Pontos turísticos 1 > Pontos turísticos 2: %s\n", ponto_turistico1 > ponto_turistico2 ? "Sim" : "Não");
-    printf ("Densidade populacional 1 > Densidade populacional 2: %s\n", densidade_populacional1 < densidade_populacional2 ? "Sim" : "Não");
-    printf ("PIB per capita 1 > PIB per capita 2: %s\n", pib_per_capita1 > pib_per_capita2 ? "Sim" : "Não");
-    printf ("Superpoder 1 > Superpoder 2: %s\n", superpoder1 > superpoder2 ? "Sim" : "Não");
+    //Comparação de atributos
 
+    if (superpoder1 > superpoder2) {
+        printf("A carta 1 tem mais superpoderes.\n");
+    } else if (superpoder1 < superpoder2) {
+        printf("A carta 2 tem mais superpoderes.\n");
+    } else {
+        printf("As cartas têm o mesmo número de superpoderes.\n");
+    }
+
+    if (ponto_turistico1 > ponto_turistico2) {
+        printf("A carta 1 tem mais pontos turísticos.\n");
+    } else if (ponto_turistico1 < ponto_turistico2) {
+        printf("A carta 2 tem mais pontos turísticos.\n");
+    } else {
+        printf("As cartas têm o mesmo número de pontos turísticos.\n");
+    }
 
    
     return 0;
