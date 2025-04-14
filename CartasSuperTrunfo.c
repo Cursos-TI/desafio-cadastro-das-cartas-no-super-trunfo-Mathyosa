@@ -66,7 +66,7 @@ int main() {
     float pib2;
     int ponto_turistico2;
     float superpoder2;
-    int opcao;
+    int opcao, opcao1;
     
     printf("Digite o nome do estado2: \n");
     scanf("%s", &estado2);
@@ -172,6 +172,65 @@ int main() {
             printf("As cartas têm a mesma densidade demográfica.\n");
 
     }
+
+    printf("1. População:\n");
+    printf ("2. Área:\n");	
+    printf ("3. PIB:\n");
+    printf ("4. Número de pontos turísticos:\n");
+    printf ("5. Densidade demográfica:\n");
+    scanf("%d", &opcao1);
+    
+    
+    
+    switch (opcao1)
+    {
+        case 1:
+        if (populacao1 > populacao2)
+            printf("A carta 1 venceu.\n");
+        else if (populacao1 < populacao2)
+            printf("A carta 2 venceu.\n");
+        else
+            printf("As cartas têm a mesma população.\n");
+
+        break;
+        case 2:
+        if (area1 > area2)
+            printf("A carta 1 venceu.\n");
+        else if (area1 < area2)
+            printf("A carta 2 venceu.\n");
+        else
+            printf("As cartas têm a mesma área.\n");
+        break;
+
+        case 3:
+        if (pib1 > pib2)
+            printf("A carta 1 venceu.\n");
+        else if (pib1 < pib2)
+            printf("A carta 2 venceu.\n");
+        else
+            printf("As cartas têm o mesmo PIB.\n");
+
+        break;
+        
+        case 4:
+        if (ponto_turistico1 > ponto_turistico2)
+            printf("A carta 1 venceu.\n");
+        else if (ponto_turistico1 < ponto_turistico2)
+            printf("A carta 2 venceu.\n");
+        else
+            printf("As cartas têm o mesmo número de pontos turísticos.\n");
+
+        break;
+        case 5:
+        if (densidade_populacional1 > densidade_populacional2)
+            printf("A carta 2 venceu.\n");
+        else if (densidade_populacional1 < densidade_populacional2)
+            printf("A carta 1 venceu.\n");
+        else
+            printf("As cartas têm a mesma densidade demográfica.\n");
+
+    }
+
 
    
     return 0;
